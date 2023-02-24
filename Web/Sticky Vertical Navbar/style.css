@@ -1,0 +1,88 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #252525;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: #131313;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 256px;
+    height: 100%;
+    font-size: 32px;
+    box-shadow: 7px 0 27px 7px #0c0c0c;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 7px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: 700;
+}
+
+a.glow:hover {
+    color: #fff;
+    text-shadow:
+            0 0 1px #fff,
+            0 0 2px #fff,
+            0 0 3px #fff,
+            0 0 5px #ff003b,
+            0 0 22px #ff003b,
+            0 0 27px #ff003b,
+            0 0 35px #ff003b,
+            0 0 40px #ff003b;
+}
+
+.parts {
+    display: flex;
+    flex-direction: column;
+    font-size: 128px;
+    height: 500px;
+    padding-left: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 128px;
+    }
+
+    .parts {
+        padding-left: 200px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 370px) and (min-width: 200px) {
+    nav {
+        padding: 0;
+    }
+
+    .parts {
+        margin: auto;
+    }
+}
