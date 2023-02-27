@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color:#252525;
     font-family: Nunito, sans-serif;
 }
 
@@ -15,20 +15,20 @@ body {
 }
 
 footer {
-    background-color: #e6d1ff;
-    color: #9d4fff;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
     position: relative;
 }
 
 footer a {
     text-decoration: none;
-    color: #9d4fff;
+    color: #f2f2f2;
     display: block;
     margin: 15px 0;
 }
 
 footer a:hover {
-    color: #c38eff;
+    color: #ff8e8e;
 }
 
 footer fieldset {
@@ -51,15 +51,15 @@ footer .ft-flex:last-child .flex-content:last-child {
 }
 
 footer .ft-flex:last-child p {
-    color: #9d4fff;
+    color: #ff8e8e;
 }
 
 footer .ft-flex:last-child a {
     width: 40px;
     display: inline-block;
-    color: #9d4fff;
+    color: #ff8e8e;
     padding: .5rem;
-    margin-right: 3px;
+    margin-right: 50px;
     text-align: center;
 }
 
@@ -93,12 +93,12 @@ footer p {
 
 footer h1 {
     font-size: 48px;
-    color: #9d4fff;
+    color: #ff8e8e;
     font-weight: 800;
 }
 
 .title {
-    color: #9d4fff;
+    color: #ff8e8e;
 }
 
 .fixed_flex,
@@ -137,10 +137,10 @@ footer h1 {
 
 input {
     font-family: Nunito, sans-serif;
-    outline: #9d4fff solid 3px;
+    outline: #ff8e8e solid 3px;
     border-radius: 0;
     background-color: transparent;
-    color: #9d4fff;
+    color: #ff8e8e;
     font-size: 24px;
     font-weight: 700;
     padding: 5px;
@@ -149,7 +149,7 @@ input {
 }
 
 input::placeholder {
-    color: rgba(157, 79, 255, .5);
+    color: rgba(255, 79, 79, 0.5);
     font-size: 24px;
     font-weight: 700;
 }
@@ -167,14 +167,13 @@ fieldset {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    cursor: url(../images/activecursor.png) 2.2 2.2, pointer;
     font-size: 20px;
     font-weight: 900;
-    color: #9d4fff;
-    background: #c38eff;
+    color: #ff4f4f;
+    background: #ff8e8e;
     border-radius: 5px;
-    border: solid 3px #9d4fff;
-    box-shadow: 4px 4px #7e40cc;
+    border: solid 3px #ff4f4f;
+    box-shadow: 4px 4px #cc4040;
 }
 
 .subbutton:active {
@@ -182,10 +181,9 @@ fieldset {
 }
 
 .subbutton:active::before {
-    box-shadow: 0 0 0 1px #9d4fff;
+    box-shadow: 0 0 0 1px #ff8e8e;
     transform: translate3d(0, 0, -10px);
 }
-
 
 @media screen  and (max-width: 920px){
 
