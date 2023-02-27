@@ -15,8 +15,10 @@ body{
 .scrolldiv {
     overflow-y: scroll;
     height: 500px;
-    background: #ffffff;
+    font-weight: 700;
+    background: #696969;
     line-height: 50px;
+    border-radius: 5px;
 }
 
 /* Firefox */
