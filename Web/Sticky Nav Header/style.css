@@ -31,7 +31,7 @@ nav {
     display: flex;
     list-style: none;
     align-items: center;
-    height: 64px;
+    height: 64px
 }
 
 .nav-item a {
@@ -61,21 +61,21 @@ img {
     filter: invert(18%) sepia(100%) saturate(6481%) hue-rotate(26deg) brightness(80%) contrast(143%) drop-shadow(0 0 .75rem #dc143c)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     nav {
         font-size: 16px;
-        height: 48px;
+        height: 48px
     }
 }
 
-@media screen and (max-width: 370px) and (min-width: 200px) {
+@media screen and (max-width:370px) and (min-width:200px) {
     nav {
         font-size: 16px;
-        height: 64px;
+        height: 64px
     }
 
-.nav-item a {
-        padding: 10px;
+    .nav-item a {
+        padding: 10px
     }
 
     img {

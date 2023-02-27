@@ -1,11 +1,13 @@
-body,html{
-    box-sizing:border-box;
-    margin:0;
-    padding:0
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
-body{
-    font-family:Nunito,sans-serif;
-    background-color:#252525
+
+body {
+    font-family: Nunito, sans-serif;
+    background-color: #252525
 }
 
 .container {
@@ -16,7 +18,7 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-    perspective: 1000px;
+    perspective: 1000px
 }
 
 .carousel {
@@ -25,28 +27,28 @@ body{
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 1s
 }
 
 .item {
     position: absolute;
     font-size: 24px;
     font-weight: 800;
-    background: rgb(255, 124, 124);
+    background: #ff7c7c;
     border-radius: 2px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
     -webkit-backdrop-filter: blur(10px);
     width: 270px;
     height: 220px;
-    text-align: center;
+    text-align: center
 }
 
 .item h1 {
     font-size: 24px;
     font-weight: 800;
     color: #fff;
-    text-shadow: 2px 1.1px #ff1111;
-    margin: 10px;
+    text-shadow: 2px 1.1px #f11;
+    margin: 10px
 }
 
 .item p {
@@ -58,31 +60,31 @@ body{
     flex-direction: column;
     color: #fff;
     line-height: 1.1em;
-    margin: 0 10px;
+    margin: 0 10px
 }
 
 .a {
-    transform: rotateY(0) translateZ(250px);
+    transform: rotateY(0) translateZ(250px)
 }
 
 .b {
-    transform: rotateY(60deg) translateZ(250px);
+    transform: rotateY(60deg) translateZ(250px)
 }
 
 .c {
-    transform: rotateY(120deg) translateZ(250px);
+    transform: rotateY(120deg) translateZ(250px)
 }
 
 .d {
-    transform: rotateY(180deg) translateZ(250px);
+    transform: rotateY(180deg) translateZ(250px)
 }
 
 .e {
-    transform: rotateY(240deg) translateZ(250px);
+    transform: rotateY(240deg) translateZ(250px)
 }
 
 .f {
-    transform: rotateY(300deg) translateZ(250px);
+    transform: rotateY(300deg) translateZ(250px)
 }
 
 .next,
@@ -99,26 +101,26 @@ body{
     border: solid 3px #ff4f4f;
     transition: transform .15s;
     transform-style: preserve-3d;
-    cursor: url(../images/activecursor.png) 2.2 2.2, pointer;
+    cursor: url(../images/activecursor.png) 2.2 2.2, pointer
 }
 
 .next:active,
 .prev:active {
-    transform: translate(0, 0);
+    transform: translate(0, 0)
 }
 
 .next:active::before,
 .prev:active::before {
     box-shadow: 0 0 0 1px #ff4f4f;
-    transform: translate3d(0, 0, -10px);
+    transform: translate3d(0, 0, -10px)
 }
 
 .next {
-    right: 18em;
+    right: 18em
 }
 
 .prev {
-    left: 18em;
+    left: 18em
 }
 
 .next::before,
@@ -130,29 +132,29 @@ body{
     background: #e84646;
     border-radius: inherit;
     transform: translate3d(0, 1px, -100px);
-    transition: transform .15s, box-shadow .15s;
+    transition: transform .15s, box-shadow .15s
 }
 
 @media screen and (max-width:920px) {
     .next {
-        right: 2em;
+        right: 2em
     }
 
     .prev {
-        left: 2em;
+        left: 2em
     }
 
     .next,
     .prev {
-        top: 633px;
+        top: 633px
     }
 
     .container {
-        perspective: 450px;
+        perspective: 450px
     }
 
     .item {
         width: 150px;
-        height: 150px;
+        height: 150px
     }
 }
