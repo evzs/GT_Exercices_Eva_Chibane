@@ -9,28 +9,36 @@ body{
 }
 
 .main {
-    height: 2000PX;
+    height: 2000px;
+}
+
+.scrolldiv {
+    overflow-y: scroll;
+    height: 500px;
+    background: #ffffff;
+    line-height: 50px;
 }
 
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #9d4fff #c38eff;
+    scrollbar-color: #ff4f4f #ff8e8e;
 }
 
 /* Others */
 *::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #c38eff;
+    background: #ff8e8e;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: #c38eff;
-    border-radius: 20px;
-    border: solid 3px #9d4fff;
-    box-shadow: 4px 4px #7e40cc;
+    background: #ff8e8e;
+    border-radius: 10px;
+    border: solid 3px #ff4f4f;
+    box-shadow: 4px 4px #cc4040;
 }
